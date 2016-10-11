@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="storeApp">
+  <head>
+    <title>Store</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/store-icon-red.png"/>
+  </head>
+  <body ng-controller="mainCtrl">
+    <div class="container">
+      <div class="transparency">
+    <header>
+      <a ui-sref="home">Home</a>
+      <a ui-sref="maps">Maps</a>
+      <a ui-sref="books">Books</a>
+      <a ui-sref="cart">Cart</a>
+    </header>
+    <ui-view></ui-view> <!--will always have the information provided in the appropriate stateProvider in app.js or the page referenced in the url of each state-->
+    <!-- {{test}} -->
+
+
+    <script src="https://opensource.keycdn.com/angularjs/1.5.8/angular.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src='app.js'></script>
+    <script src="mainCtrl.js"></script>
+    <script src="homeCtrl.js"></script>
+    <script src="mainServ.js"></script>
+    <script src="itemsListCtrl.js"></script>
+    <script src="itemsList.js"></script>
+    <script src="cartCtrl.js"></script>
+    <!-- <script src="shopCtrl.js"></script> -->
+  </div>
+</div>
+  </body>
+</html>
